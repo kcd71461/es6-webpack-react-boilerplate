@@ -23,7 +23,7 @@ export default {
             __DEV__: true
         }),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/index.ejs',
             minify: {
